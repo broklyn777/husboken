@@ -1,18 +1,12 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-import { PHOTO_NAME, UPLOAD_DIR } from "@/lib/store";
+import { readPhoto } from "@/lib/store";
+import { isAuthed, unauthorized } from "@/lib/auth";
 
-const TYPES: Record<string, string> = { jpg: "image/jpeg", png: "image/png", webp: "image/webp", gif: "image/gif" };
-
-export async function GET(_req: Request, ctx: { params: Promise<{ name: string }> }) {
+export async function GET(req: Request, ctx: { params: Promise<{ name: string }> }) {
+  if (!(await isAuthed(req))) return unauthorized();
   const { name } = await ctx.params;
-  if (!PHOTO_NAME.test(name)) return new Response("Hittades inte", { status: 404 });
-  try {
-    const buf = await fs.readFile(path.join(UPLOAD_DIR, name));
-    return new Response(new Uint8Array(buf), {
-      headers: { "Content-Type": TYPES[name.split(".").pop()!], "Cache-Control": "public, max-age=31536000, immutable" },
-    });
-  } catch {
-    return new Response("Hittades inte", { status: 404 });
-  }
+  const photo = await readPhoto(name);
+  if (!photo) return new Response("Hittades inte", { status: 404 });
+  return new Response(photo.body as BodyInit, {
+    headers: { "Content-Type": photo.type, "Cache-Control": "private, max-age=31536000, immutable" },
+  });
 }

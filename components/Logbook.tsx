@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { CATEGORIES } from "@/lib/parts";
-import { photoUrl, shrinkPhoto } from "@/lib/photo";
+import { NotLoggedIn, photoUrl, postJson, uploadPhoto } from "@/lib/photo";
 import type { LogEntry } from "@/lib/store";
 
 const today = () => new Date().toISOString().slice(0, 10);
@@ -18,6 +18,7 @@ export function Logbook() {
   async function load() {
     try {
       const r = await fetch("/api/logg", { cache: "no-store" });
+      if (r.status === 401) { location.href = "/logga-in?till=/logg"; return; }
       if (!r.ok) throw new Error();
       setEntries(await r.json());
     } catch {
@@ -30,27 +31,32 @@ export function Logbook() {
     e.preventDefault();
     const form = e.currentTarget;
     const raw = new FormData(form);
-    const fd = new FormData();
-    for (const k of ["title", "date", "cat", "text"]) fd.append(k, String(raw.get(k) ?? ""));
+    const body: Record<string, unknown> = {};
+    for (const k of ["title", "date", "cat", "text"]) body[k] = String(raw.get(k) ?? "");
     const files = (raw.getAll("photos") as File[]).filter((f) => f.size > 0).slice(0, 8);
     setBusy(true);
     try {
+      const photos: string[] = [];
       for (let i = 0; i < files.length; i++) {
-        setStatus(`Förbereder foto ${i + 1} av ${files.length}…`);
-        fd.append("photos", await shrinkPhoto(files[i]), `foto${i}.jpg`);
+        setStatus(`Laddar upp foto ${i + 1} av ${files.length}…`);
+        photos.push(await uploadPhoto(files[i]));
       }
       setStatus("Sparar…");
-      const r = await fetch("/api/logg", { method: "POST", body: fd });
-      const j = await r.json();
-      if (!r.ok) throw new Error(j.error);
+      await postJson("/api/logg", { ...body, photos });
       form.reset();
       setDate(today());
       setStatus("Sparat i loggen.");
       await load();
     } catch (err) {
-      setStatus(err instanceof Error && err.message ? err.message : "Kunde inte spara. Försök igen.");
+      if (err instanceof NotLoggedIn) location.href = "/logga-in?till=/logg";
+      else setStatus(err instanceof Error && err.message ? err.message : "Kunde inte spara. Försök igen.");
     }
     setBusy(false);
+  }
+
+  async function logout() {
+    await fetch("/api/logga-ut", { method: "POST" });
+    location.href = "/";
   }
 
   const shown = (entries ?? []).filter((e) => filter === "Alla" || e.cat === filter);
@@ -72,6 +78,7 @@ export function Logbook() {
         <div className="row" style={{ alignItems: "center" }}>
           <div style={{ flex: "0 0 auto" }}><button type="submit" disabled={busy}>Spara i loggen</button></div>
           <span className="status" style={{ flex: "3 1 200px" }} aria-live="polite">{status}</span>
+          <div style={{ flex: "0 0 auto" }}><button type="button" className="ghost small" onClick={logout}>Logga ut</button></div>
         </div>
       </form>
 
@@ -82,7 +89,7 @@ export function Logbook() {
       </div>
 
       <div className="stack">
-        {loadError && <div className="empty">Kunde inte läsa loggen. Är servern igång?</div>}
+        {loadError && <div className="empty">Kunde inte läsa loggen. Försök igen om en stund.</div>}
         {!entries && !loadError && <div className="empty">Loggen laddas…</div>}
         {entries && shown.length === 0 && (
           <div className="empty">Inga anteckningar här än. Skriv den första ovanför, till exempel vad manometern visar idag.</div>
