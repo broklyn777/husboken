@@ -1,0 +1,80 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Två sätt att koppla två ackumulatortankar till vedpannan. Seriekoppling: pannan laddar tank 1 uppifrån, vatten från botten av tank 1 går till toppen av tank 2, och botten av tank 2 går tillbaka till pannan. Tank 1 blir varm först. Parallellkoppling: rören delar sig så att båda tankarna laddas samtidigt och har ungefär samma temperatur.">
+  <defs>
+    <linearGradient id="tt-hot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--hot);stop-opacity:.6"/>
+      <stop offset=".8" style="stop-color:var(--hot);stop-opacity:.35"/>
+      <stop offset="1" style="stop-color:var(--cold);stop-opacity:.3"/>
+    </linearGradient>
+    <linearGradient id="tt-cool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--hot);stop-opacity:.35"/>
+      <stop offset=".35" style="stop-color:var(--cold);stop-opacity:.2"/>
+      <stop offset="1" style="stop-color:var(--cold);stop-opacity:.42"/>
+    </linearGradient>
+    <linearGradient id="tt-mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--hot);stop-opacity:.5"/>
+      <stop offset=".55" style="stop-color:var(--hot);stop-opacity:.25"/>
+      <stop offset="1" style="stop-color:var(--cold);stop-opacity:.38"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ============ SERIEKOPPLING ============ -->
+  <g transform="translate(0 50)">
+    <text x="20" y="-24" class="th">A. Seriekoppling: tankarna efter varandra</text>
+    <!-- panna -->
+    <rect x="20" y="60" width="90" height="110" rx="6" class="g"/>
+    <text x="65" y="112" text-anchor="middle" class="tb">Vedpanna</text>
+    <text x="65" y="128" text-anchor="middle" class="ts">Bonus Light</text>
+    <!-- tankar -->
+    <rect x="200" y="40" width="80" height="160" rx="34" class="s" style="fill:url(#tt-hot)"/>
+    <rect x="360" y="40" width="80" height="160" rx="34" class="s" style="fill:url(#tt-cool)"/>
+    <text x="240" y="128" text-anchor="middle" class="tb">Tank 1</text>
+    <text x="400" y="128" text-anchor="middle" class="tb">Tank 2</text>
+    <!-- panna -> tank 1 topp -->
+    <path d="M110 80 H150 V24 H240 V40" class="hol"/>
+    <!-- tank 1 botten -> tank 2 topp -->
+    <path d="M240 200 V220 H320 V24 H400 V40" class="s" style="stroke:var(--copper);stroke-width:4"/>
+    <!-- tank 2 botten -> panna -->
+    <path d="M400 200 V238 H130 V150 H110" class="wal"/>
+    <!-- till element från tank 1, retur till tank 2 -->
+    <path d="M262 41 V8 H660 V90" class="hol"/>
+    <path d="M660 150 V214 H420 V200" class="wal"/>
+    <rect x="620" y="90" width="80" height="60" rx="4" class="g"/>
+    <text x="660" y="116" text-anchor="middle" class="tb">Shunt och</text>
+    <text x="660" y="132" text-anchor="middle" class="tb">element</text>
+    <!-- etiketter -->
+    <text x="470" y="186" class="ts">kopparfärgat rör: från botten</text>
+    <text x="470" y="200" class="ts">av tank 1 till toppen av tank 2</text>
+    <text x="240" y="262" text-anchor="middle" class="ts">varm först</text>
+    <text x="400" y="262" text-anchor="middle" class="ts">fylls på efteråt</text>
+    <text x="20" y="262" class="ts">tillbaka till pannan</text>
+  </g>
+
+  <!-- ============ PARALLELLKOPPLING ============ -->
+  <g transform="translate(0 372)">
+    <text x="20" y="-24" class="th">B. Parallellkoppling: tankarna bredvid varandra</text>
+    <rect x="20" y="60" width="90" height="110" rx="6" class="g"/>
+    <text x="65" y="112" text-anchor="middle" class="tb">Vedpanna</text>
+    <text x="65" y="128" text-anchor="middle" class="ts">Bonus Light</text>
+    <rect x="200" y="40" width="80" height="160" rx="34" class="s" style="fill:url(#tt-mid)"/>
+    <rect x="360" y="40" width="80" height="160" rx="34" class="s" style="fill:url(#tt-mid)"/>
+    <text x="240" y="128" text-anchor="middle" class="tb">Tank 1</text>
+    <text x="400" y="128" text-anchor="middle" class="tb">Tank 2</text>
+    <!-- varm samlingsledning upptill -->
+    <path d="M110 80 H150 V24 H660 V90" class="hol"/>
+    <path d="M240 24 V40 M400 24 V40" class="hol"/>
+    <circle cx="240" cy="24" r="4" style="fill:var(--hot)"/><circle cx="400" cy="24" r="4" style="fill:var(--hot)"/>
+    <!-- sval samlingsledning nertill -->
+    <path d="M110 150 H150 V220 H660 V150" class="wal"/>
+    <path d="M240 200 V220 M400 200 V220" class="wal"/>
+    <circle cx="240" cy="220" r="4" style="fill:var(--cold)"/><circle cx="400" cy="220" r="4" style="fill:var(--cold)"/>
+    <rect x="620" y="90" width="80" height="60" rx="4" class="g"/>
+    <text x="660" y="116" text-anchor="middle" class="tb">Shunt och</text>
+    <text x="660" y="132" text-anchor="middle" class="tb">element</text>
+    <line x1="404" y1="24" x2="470" y2="56" class="lead"/>
+    <text x="474" y="60" class="ts">T-koppling: röret delar sig</text>
+    <text x="474" y="74" class="ts">till båda tankarnas toppar</text>
+    <text x="320" y="248" text-anchor="middle" class="ts">båda tankarna laddas samtidigt och har ungefär samma temperatur</text>
+  </g>
+</svg></div>
+<figcaption>De två vanliga sätten att koppla två tankar. Rött är varmt vatten, blått är svalt. Laddautomatiken, pumparna och ventilerna är utelämnade för att det ska gå att se principen. Principskiss.</figcaption></figure>
