@@ -1,0 +1,53 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Skruvsäkringar, proppar, med färgkod: 6 ampere grön, 10 ampere röd, 16 ampere grå, 20 ampere blå, 25 ampere gul. En hel propp har pricken kvar, en trasig propp har tappat pricken. Bredvid visas en jordfelsbrytare med testknappen märkt T.">
+  <text x="30" y="28" class="th">Proppar: färgen visar ampere</text>
+  <g transform="translate(40 50)">
+    <g>
+      <path d="M0 20 H60 V110 Q60 124 46 124 H14 Q0 124 0 110 Z" class="cr" style="fill:var(--surface)"/>
+      <circle cx="30" cy="50" r="12" style="fill:#3f9b4f;stroke:var(--fg)"/>
+      <text x="30" y="150" class="tb" text-anchor="middle">6 A</text><text x="30" y="166" class="ts" text-anchor="middle">grön</text>
+    </g>
+    <g transform="translate(90 0)">
+      <path d="M0 20 H60 V110 Q60 124 46 124 H14 Q0 124 0 110 Z" class="cr" style="fill:var(--surface)"/>
+      <circle cx="30" cy="50" r="12" style="fill:#d23b30;stroke:var(--fg)"/>
+      <text x="30" y="150" class="tb" text-anchor="middle">10 A</text><text x="30" y="166" class="ts" text-anchor="middle">röd</text>
+    </g>
+    <g transform="translate(180 0)">
+      <path d="M0 20 H60 V110 Q60 124 46 124 H14 Q0 124 0 110 Z" class="cr" style="fill:var(--surface)"/>
+      <circle cx="30" cy="50" r="12" style="fill:#8a8f93;stroke:var(--fg)"/>
+      <text x="30" y="150" class="tb" text-anchor="middle">16 A</text><text x="30" y="166" class="ts" text-anchor="middle">grå</text>
+    </g>
+    <g transform="translate(270 0)">
+      <path d="M0 20 H60 V110 Q60 124 46 124 H14 Q0 124 0 110 Z" class="cr" style="fill:var(--surface)"/>
+      <circle cx="30" cy="50" r="12" style="fill:#2f6fc0;stroke:var(--fg)"/>
+      <text x="30" y="150" class="tb" text-anchor="middle">20 A</text><text x="30" y="166" class="ts" text-anchor="middle">blå</text>
+    </g>
+    <g transform="translate(360 0)">
+      <path d="M0 20 H60 V110 Q60 124 46 124 H14 Q0 124 0 110 Z" class="cr" style="fill:var(--surface)"/>
+      <circle cx="30" cy="50" r="12" style="fill:#e3c22c;stroke:var(--fg)"/>
+      <text x="30" y="150" class="tb" text-anchor="middle">25 A</text><text x="30" y="166" class="ts" text-anchor="middle">gul</text>
+    </g>
+  </g>
+  <!-- hel vs trasig -->
+  <g transform="translate(40 230)">
+    <circle cx="12" cy="12" r="10" style="fill:#d23b30;stroke:var(--fg)"/>
+    <text x="30" y="16" class="tb">pricken sitter kvar = hel</text>
+    <circle cx="232" cy="12" r="10" class="bg" style="stroke:var(--fg);stroke-dasharray:3 2"/>
+    <text x="250" y="16" class="tb">pricken borta = trasig, byt</text>
+    <text x="0" y="46" class="ts">Byt alltid till samma ampere. En större propp skyddar inte ledningen och kan orsaka brand.</text>
+  </g>
+  <!-- jordfelsbrytare -->
+  <g transform="translate(560 40)">
+    <text x="80" y="-12" class="th" text-anchor="middle">Jordfelsbrytare</text>
+    <rect x="30" y="0" width="100" height="170" rx="6" class="cr" style="fill:var(--surface)"/>
+    <rect x="62" y="40" width="36" height="60" rx="4" class="g"/>
+    <rect x="68" y="46" width="24" height="24" rx="3" class="cr"/>
+    <text x="80" y="118" class="ts" text-anchor="middle">spak: upp = på</text>
+    <circle cx="80" cy="146" r="12" style="fill:var(--warn);stroke:var(--fg)"/>
+    <text x="80" y="151" text-anchor="middle" class="numt" style="fill:#1d2427">T</text>
+    <line x1="92" y1="146" x2="150" y2="186" class="lead"/>
+    <text x="150" y="202" text-anchor="end" class="tb">testknapp</text>
+    <text x="150" y="218" text-anchor="end" class="ts">tryck 2 ggr/år, ska slå av</text>
+  </g>
+</svg></div>
+<figcaption>Färgkoden på skruvproppar. Pricken syns genom ett litet fönster i proppens ände. Jordfelsbrytaren ser olika ut beroende på märke men har alltid en testknapp. Principskiss.</figcaption></figure>

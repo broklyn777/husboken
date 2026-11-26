@@ -1,0 +1,49 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sprängskiss av en klämringskoppling: kopparrör, mutter, klämring och kopplingens hus, i den ordning de sätts ihop. Under visas den hopskruvade kopplingen i genomskärning där klämringen pressas in mot röret.">
+  <text x="24" y="30" class="th">1. Isär, i rätt ordning</text>
+  <!-- rör -->
+  <rect x="24" y="86" width="250" height="28" class="cu"/>
+  <ellipse cx="274" cy="100" rx="5" ry="14" class="cu"/>
+  <text x="90" y="140" class="tb">kopparrör</text>
+  <text x="90" y="156" class="ts">kapat rakt och avgradat</text>
+  <!-- mutter -->
+  <path d="M320 70 H368 V130 H320 Z" class="cr"/>
+  <path d="M320 86 H368 M320 114 H368" class="s2"/>
+  <text x="344" y="156" class="tb" text-anchor="middle">mutter</text>
+  <circle cx="344" cy="48" r="11" class="num"/><text x="344" y="52" class="numt" text-anchor="middle">1</text>
+  <!-- klämring -->
+  <path d="M404 82 L428 78 L428 122 L404 118 Z" class="cu"/>
+  <path d="M428 78 L452 82 L452 118 L428 122" class="cu"/>
+  <text x="428" y="156" class="tb" text-anchor="middle">klämring</text>
+  <text x="428" y="172" class="ts" text-anchor="middle">mjuk mässing</text>
+  <circle cx="428" cy="48" r="11" class="num"/><text x="428" y="52" class="numt" text-anchor="middle">2</text>
+  <!-- hus -->
+  <path d="M492 76 H540 V64 H600 V76 H650 V124 H600 V136 H540 V124 H492 Z" class="cr"/>
+  <path d="M492 86 H540 M492 114 H540" class="s2"/>
+  <rect x="650" y="86" width="90" height="28" class="cu"/>
+  <text x="570" y="156" class="tb" text-anchor="middle">kopplingens hus</text>
+  <text x="570" y="172" class="ts" text-anchor="middle">rak, vinkel, T-rör eller ventil</text>
+  <circle cx="570" cy="48" r="11" class="num"/><text x="570" y="52" class="numt" text-anchor="middle">3</text>
+  <path d="M290 100 H310 M300 94 L310 100 L300 106" class="arr"/>
+
+  <text x="24" y="222" class="th">2. Ihopskruvad, genomskärning</text>
+  <!-- hus i snitt -->
+  <path d="M300 258 H420 V244 H520 V258 H600 V342 H520 V356 H420 V342 H300 Z" class="cr"/>
+  <rect x="200" y="286" width="240" height="28" class="cu"/>
+  <rect x="440" y="290" width="70" height="20" class="bg"/>
+  <path d="M440 286 V314" class="s"/>
+  <rect x="520" y="286" width="220" height="28" class="cu"/>
+  <!-- mutter i snitt -->
+  <rect x="300" y="258" width="70" height="28" class="g"/>
+  <rect x="300" y="314" width="70" height="28" class="g"/>
+  <!-- ring pressad -->
+  <path d="M370 286 L384 280 L398 286 Z" class="cu"/>
+  <path d="M370 314 L384 320 L398 314 Z" class="cu"/>
+  <line x1="384" y1="270" x2="384" y2="240" class="lead"/><circle cx="384" cy="280" r="2.5" class="dot"/>
+  <text x="392" y="238" class="tb">ringen pressas in mot röret och tätar</text>
+  <line x1="440" y1="320" x2="460" y2="372" class="lead"/><circle cx="440" cy="314" r="2.5" class="dot"/>
+  <text x="466" y="380" class="tb">röret ska nå ända in till botten</text>
+  <line x1="320" y1="342" x2="290" y2="372" class="lead"/>
+  <text x="286" y="380" class="tb" text-anchor="end">muttern drar ringen framåt</text>
+</svg></div>
+<figcaption>Trä på muttern först, sedan ringen. Tryck in röret till botten, dra muttern för hand och sedan ungefär ett varv med nyckel medan du håller emot huset med en annan nyckel. Principskiss.</figcaption></figure>

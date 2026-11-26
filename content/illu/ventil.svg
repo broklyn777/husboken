@@ -1,0 +1,28 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avstängningsventil sedd framifrån i två lägen. Öppen: skruvskåran står längs med röret. Stängd: skåran står tvärs över röret.">
+  <g transform="translate(60 0)">
+    <text x="130" y="28" class="th" text-anchor="middle">Öppen</text>
+    <rect x="0" y="100" width="90" height="22" class="cu"/>
+    <rect x="170" y="100" width="90" height="22" class="cu"/>
+    <rect x="90" y="88" width="80" height="46" rx="6" class="cr"/>
+    <circle cx="130" cy="111" r="20" class="bg" style="stroke:var(--fg);stroke-width:1.6"/>
+    <rect x="112" y="107" width="36" height="8" rx="2" style="fill:var(--fg)"/>
+    <path d="M10 160 H250" class="wal"/><path d="M238 154 L250 160 L238 166" class="arr-c"/>
+    <text x="130" y="190" text-anchor="middle" class="tb">skåran längs med röret</text>
+    <text x="130" y="206" text-anchor="middle" class="ts">vattnet går igenom</text>
+  </g>
+  <g transform="translate(420 0)">
+    <text x="130" y="28" class="th" text-anchor="middle">Stängd</text>
+    <rect x="0" y="100" width="90" height="22" class="cu"/>
+    <rect x="170" y="100" width="90" height="22" class="cu"/>
+    <rect x="90" y="88" width="80" height="46" rx="6" class="cr"/>
+    <circle cx="130" cy="111" r="20" class="bg" style="stroke:var(--fg);stroke-width:1.6"/>
+    <rect x="126" y="93" width="8" height="36" rx="2" style="fill:var(--fg)"/>
+    <path d="M10 160 H100" class="wal"/><path d="M108 152 L120 168 M120 152 L108 168" class="arr" style="stroke:var(--danger);stroke-width:2.5"/>
+    <text x="130" y="190" text-anchor="middle" class="tb">skåran tvärs över röret</text>
+    <text x="130" y="206" text-anchor="middle" class="ts">vattnet är avstängt</text>
+  </g>
+  <text x="380" y="70" text-anchor="middle" class="ts">vrid ett kvarts varv</text>
+  <path d="M340 80 Q380 60 420 80" class="arr"/><path d="M410 72 L420 80 L408 84" class="arr"/>
+</svg></div>
+<figcaption>Avstängningsventil med skruvskåra, sedd framifrån. Ventiler med ratt stängs medsols tills det tar stopp. Principskiss.</figcaption></figure>

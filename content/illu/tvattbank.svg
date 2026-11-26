@@ -1,0 +1,67 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tvättbänk sedd från sidan, monterad på konsoler på väggen med överkanten 85 till 90 centimeter över golvet. Väggblandaren sitter ovanför med avstängningsventiler på rören. Från bänkens botten går avloppet via vattenlås i ett rör som lutar ner mot golvbrunnen. En liten bild visar väggblandaren framifrån med 160 millimeter mellan anslutningarna.">
+  <defs>
+    <pattern id="hatch-tb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" class="bg"/><line x1="0" y1="0" x2="0" y2="7" class="s2"/>
+    </pattern>
+  </defs>
+  <!-- vägg och golv -->
+  <rect x="60" y="20" width="26" height="400" style="fill:url(#hatch-tb)" class="s2"/>
+  <rect x="60" y="420" width="640" height="24" style="fill:url(#hatch-tb)" class="s2"/>
+  <!-- golvbrunn -->
+  <rect x="560" y="420" width="70" height="24" class="bg" style="stroke:var(--fg);stroke-width:1.6"/>
+  <path d="M556 420 H634" class="s" style="stroke-width:4"/>
+
+  <!-- rör från vägg och blandare -->
+  <rect x="86" y="96" width="26" height="12" class="cu"/>
+  <rect x="112" y="90" width="22" height="24" rx="3" class="cr"/>
+  <rect x="134" y="94" width="40" height="16" class="cr"/>
+  <path d="M174 100 H250 Q262 100 262 112 V130 H250 V114 H174" class="cr"/>
+  <path d="M150 94 V70 L176 60" class="s" style="stroke-width:5"/>
+
+  <!-- bänk -->
+  <path d="M86 180 H470 V190 H450 Q450 300 360 300 H210 Q120 300 120 190 H86 Z" class="cr"/>
+  <path d="M132 190 Q132 288 210 288 H360 Q440 288 440 190" class="wa" style="fill-opacity:.12"/>
+  <!-- konsol -->
+  <path d="M86 196 H180 L86 300 Z" class="g"/>
+  <circle cx="98" cy="214" r="4" class="bg" style="stroke:var(--fg)"/><circle cx="98" cy="280" r="4" class="bg" style="stroke:var(--fg)"/>
+
+  <!-- avlopp -->
+  <rect x="274" y="298" width="22" height="16" class="cr"/>
+  <path d="M285 314 V346 Q285 370 309 370 Q333 370 333 346 V340 Q333 334 342 334 L600 360 V420" class="s" style="stroke-width:14;stroke:var(--line)"/>
+  <path d="M285 314 V346 Q285 370 309 370 Q333 370 333 346 V340 Q333 334 342 334 L600 360 V420" class="s"/>
+  <path d="M291 350 Q291 364 309 364 Q327 364 327 350 Z" class="wa"/>
+
+  <!-- höjdmått -->
+  <path d="M500 180 V420" class="lead"/><path d="M494 186 L500 178 L506 186 M494 414 L500 422 L506 414" class="lead"/>
+  <line x1="470" y1="180" x2="512" y2="180" class="lead" style="stroke-dasharray:3 3"/>
+  <text x="508" y="300" class="tb">85–90 cm</text>
+  <text x="508" y="316" class="ts">till överkant</text>
+
+  <!-- etiketter -->
+  <line x1="262" y1="118" x2="300" y2="140" class="lead"/><text x="304" y="144" class="tb">väggblandare</text>
+  <line x1="123" y1="90" x2="150" y2="40" class="lead"/><text x="154" y="36" class="tb">avstängningsventil</text>
+  <text x="154" y="22" class="ts">en på varmt, en på kallt</text>
+  <line x1="130" y1="250" x2="40" y2="260" class="lead"/>
+  <text x="36" y="246" text-anchor="end" class="tb">konsol</text>
+  <text x="36" y="262" text-anchor="end" class="ts">skruv + plugg</text>
+  <line x1="309" y1="372" x2="250" y2="400" class="lead"/><text x="246" y="404" text-anchor="end" class="tb">vattenlås</text>
+  <text x="440" y="326" class="tb" text-anchor="middle">lutning nedåt hela vägen</text>
+  <text x="440" y="378" class="ts" text-anchor="middle">minst ca 1 cm per meter</text>
+  <text x="596" y="462" class="tb" text-anchor="middle">golvbrunn</text>
+
+  <!-- inset framifrån -->
+  <g transform="translate(560 40)">
+    <rect x="0" y="0" width="180" height="150" rx="6" class="bg" style="stroke:var(--line);stroke-width:1.2"/>
+    <text x="90" y="18" class="th" text-anchor="middle">framifrån</text>
+    <rect x="20" y="58" width="140" height="22" rx="8" class="cr"/>
+    <circle cx="10" cy="69" r="0" class="dot"/>
+    <rect x="22" y="80" width="16" height="16" class="cr"/><rect x="142" y="80" width="16" height="16" class="cr"/>
+    <rect x="80" y="80" width="20" height="28" class="cr"/>
+    <rect x="84" y="40" width="12" height="18" class="cr"/>
+    <circle cx="30" cy="88" r="3" style="fill:var(--hot)"/><circle cx="150" cy="88" r="3" style="fill:var(--cold)"/>
+    <path d="M30 120 H150" class="lead"/><path d="M30 114 V126 M150 114 V126" class="lead"/>
+    <text x="90" y="140" class="tb" text-anchor="middle">c/c 160 mm</text>
+  </g>
+</svg></div>
+<figcaption>Tvättbänk på konsoler, sedd från sidan. Blandaren sitter på väggen ovanför, och avloppet går via vattenlåset i ett rör som lutar hela vägen ner till golvbrunnen. Principskiss, inte skalenlig.</figcaption></figure>

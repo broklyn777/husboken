@@ -1,0 +1,58 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sprängskiss av en ettgreppsblandare uppifrån och ner: täckpropp, skruv, spak, kåpa, mutter, insats med keramiska skivor, och blandarhuset med sätet där insatsen sitter.">
+  <!-- mittlinje -->
+  <line x1="300" y1="20" x2="300" y2="440" class="lead" style="stroke-dasharray:6 4"/>
+
+  <!-- propp -->
+  <rect x="290" y="22" width="20" height="10" rx="3" class="cr" style="fill:var(--cold);fill-opacity:.5"/>
+  <!-- skruv -->
+  <path d="M295 46 H305 V70 L300 76 L295 70 Z" class="cr"/>
+  <!-- spak -->
+  <path d="M276 92 H324 V118 H276 Z" class="cr"/>
+  <path d="M324 98 L440 84 L442 96 L324 112 Z" class="cr"/>
+  <circle cx="300" cy="105" r="5" class="bg" style="stroke:var(--fg)"/>
+  <!-- kåpa -->
+  <path d="M268 140 H332 L340 176 H260 Z" class="cr"/>
+  <!-- mutter -->
+  <rect x="270" y="196" width="60" height="22" class="cr"/>
+  <path d="M270 202 H330 M270 212 H330" class="s2"/>
+  <!-- insats -->
+  <rect x="294" y="236" width="12" height="20" class="cr"/>
+  <rect x="270" y="256" width="60" height="64" rx="4" class="g"/>
+  <rect x="274" y="300" width="52" height="6" style="fill:var(--surface);stroke:var(--fg);stroke-width:1"/>
+  <rect x="274" y="308" width="52" height="6" style="fill:var(--surface);stroke:var(--fg);stroke-width:1"/>
+  <circle cx="282" cy="324" r="4" class="cr"/><circle cx="318" cy="324" r="4" class="cr"/>
+  <!-- hus -->
+  <path d="M250 346 H350 V430 H250 Z" class="cr"/>
+  <path d="M266 346 V372 H334 V346" class="bg" style="stroke:var(--fg);stroke-width:1.6"/>
+  <path d="M350 360 H460 Q480 360 480 380 V392 H466 V378 H350" class="cr"/>
+  <circle cx="282" cy="372" r="3" class="dot"/><circle cx="318" cy="372" r="3" class="dot"/>
+
+  <!-- etiketter vänster -->
+  <g>
+    <line x1="288" y1="27" x2="200" y2="27" class="lead"/><text x="196" y="31" text-anchor="end" class="tb">täckpropp</text>
+    <text x="196" y="46" text-anchor="end" class="ts">bänd försiktigt med kniv</text>
+    <line x1="294" y1="60" x2="200" y2="70" class="lead"/><text x="196" y="74" text-anchor="end" class="tb">skruv</text>
+    <text x="196" y="88" text-anchor="end" class="ts">ofta insex</text>
+    <line x1="276" y1="112" x2="200" y2="120" class="lead"/><text x="196" y="124" text-anchor="end" class="tb">spak</text>
+    <line x1="264" y1="160" x2="200" y2="164" class="lead"/><text x="196" y="168" text-anchor="end" class="tb">kåpa</text>
+    <text x="196" y="182" text-anchor="end" class="ts">skruvas av för hand</text>
+    <line x1="270" y1="207" x2="200" y2="214" class="lead"/><text x="196" y="218" text-anchor="end" class="tb">mutter</text>
+    <text x="196" y="232" text-anchor="end" class="ts">håller insatsen, skiftnyckel</text>
+    <line x1="270" y1="270" x2="200" y2="268" class="lead"/><text x="196" y="272" text-anchor="end" class="tb">insats (kassett)</text>
+    <text x="196" y="286" text-anchor="end" class="ts">det här är delen du byter</text>
+    <line x1="250" y1="400" x2="200" y2="400" class="lead"/><text x="196" y="404" text-anchor="end" class="tb">blandarhus</text>
+    <text x="196" y="418" text-anchor="end" class="ts">sitter kvar på handfatet</text>
+  </g>
+  <!-- etiketter höger -->
+  <g>
+    <line x1="326" y1="304" x2="400" y2="290" class="lead"/><text x="404" y="286" class="tb">keramiska skivor</text>
+    <text x="404" y="302" class="ts">glider mot varandra och blandar</text>
+    <text x="404" y="316" class="ts">varmt och kallt. Slitna = det droppar</text>
+    <line x1="322" y1="326" x2="400" y2="340" class="lead"/><text x="404" y="344" class="tb">packningar och styrtappar</text>
+    <text x="404" y="358" class="ts">vänd insatsen åt samma håll som den gamla</text>
+    <line x1="334" y1="368" x2="400" y2="404" class="lead"/><text x="404" y="408" class="tb">säte</text>
+    <text x="404" y="422" class="ts">torka rent, kalk med ättika</text>
+  </g>
+</svg></div>
+<figcaption>En ettgreppsblandare isärtagen uppifrån och ner. Lägg delarna på en handduk i samma ordning som du tar av dem, så går det lätt att sätta ihop igen. Utseendet varierar mellan märken. Principskiss.</figcaption></figure>

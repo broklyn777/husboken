@@ -1,0 +1,59 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="-100 0 860 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Principskiss av en vedpanna med omvänd förbränning, sedd från sidan. Veden ligger i vedmagasinet överst. Elden drar nedåt genom en spalt i keramiken till förbränningskammaren under. Rökgaserna går sedan upp genom konvektionsrören bak, där turbulatorerna hänger, till fläkten upptill och vidare till skorstenen. Runt eldstaden finns en mantel med vatten.">
+  <!-- yttre mantel med vatten -->
+  <rect x="150" y="60" width="380" height="400" rx="10" class="g"/>
+  <rect x="166" y="76" width="348" height="368" rx="6" class="wa"/>
+  <!-- vedmagasin -->
+  <rect x="190" y="100" width="210" height="170" class="bg" style="stroke-width:1.6;stroke:var(--fg)"/>
+  <g class="cu">
+    <circle cx="226" cy="246" r="18"/><circle cx="266" cy="246" r="18"/><circle cx="306" cy="246" r="18"/><circle cx="346" cy="246" r="18"/>
+    <circle cx="246" cy="212" r="18"/><circle cx="286" cy="212" r="18"/><circle cx="326" cy="212" r="18"/><circle cx="366" cy="246" r="0"/>
+    <circle cx="266" cy="178" r="18"/><circle cx="306" cy="178" r="18"/>
+  </g>
+  <!-- keramikbotten med spalt -->
+  <rect x="190" y="270" width="96" height="26" class="cr"/>
+  <rect x="304" y="270" width="96" height="26" class="cr"/>
+  <path d="M288 258 Q295 272 290 300 Q296 290 302 300 Q298 272 304 258 Q296 266 288 258 Z" class="flame"/>
+  <path d="M295 300 V330" class="arr-h"/><path d="M289 322 L295 332 L301 322" class="arr-h"/>
+  <!-- förbränningskammare -->
+  <rect x="190" y="306" width="210" height="110" rx="40" class="cr"/>
+  <rect x="210" y="322" width="170" height="80" rx="32" class="bg" style="stroke-width:1.2;stroke:var(--fg)"/>
+  <path d="M240 368 Q260 340 280 368 Q300 336 320 368 Q340 344 360 368" class="arr-h" style="stroke-width:3"/>
+  <path d="M380 362 H440" class="arr-h"/>
+  <!-- konvektionsrör med turbulatorer -->
+  <rect x="440" y="96" width="50" height="320" class="bg" style="stroke-width:1.6;stroke:var(--fg)"/>
+  <path d="M465 400 V120" class="arr-h"/><path d="M459 128 L465 116 L471 128" class="arr-h"/>
+  <path d="M452 380 L478 360 M452 340 L478 320 M452 300 L478 280 M452 260 L478 240 M452 220 L478 200 M452 180 L478 160 M452 140 L478 120" class="s2"/>
+  <!-- fläkt och rökrör -->
+  <rect x="420" y="20" width="90" height="40" rx="6" class="cr"/>
+  <circle cx="465" cy="40" r="13" class="bg" style="stroke:var(--fg)"/>
+  <path d="M458 33 L472 47 M472 33 L458 47" class="s2"/>
+  <path d="M510 40 H600 V10" class="s" style="stroke-width:12;stroke:var(--line)"/>
+  <path d="M594 22 L600 10 L606 22" class="arr"/>
+  <!-- luckor och luft -->
+  <rect x="140" y="130" width="12" height="110" class="cr"/>
+  <rect x="140" y="320" width="12" height="80" class="cr"/>
+  <path d="M-90 140 H138" class="arr"/><path d="M128 134 L138 140 L128 146" class="arr"/>
+  <path d="M-90 286 H190" class="arr"/><path d="M180 280 L190 286 L180 292" class="arr"/>
+
+  <!-- etiketter -->
+  <text x="-90" y="122" class="tb">primärluft</text><text x="-90" y="160" class="ts">övre spjället, "gaspedalen"</text>
+  <text x="-90" y="270" class="tb">sekundärluft</text><text x="-90" y="306" class="ts">nedre spjället</text>
+  <text x="-90" y="196" class="tb">övre lucka</text><text x="-90" y="212" class="ts">påfyllning</text>
+  <line x1="-14" y1="200" x2="140" y2="200" class="lead"/>
+  <text x="-90" y="360" class="tb">nedre lucka</text><text x="-90" y="376" class="ts">aska, öppna aldrig</text><text x="-90" y="390" class="ts">när det brinner</text>
+  <line x1="-6" y1="356" x2="140" y2="356" class="lead"/>
+  <text x="295" y="92" class="tb" text-anchor="middle">vedmagasin, 90 liter</text>
+  <line x1="400" y1="283" x2="560" y2="283" class="lead"/>
+  <text x="566" y="280" class="tb">keramik med spalt</text><text x="566" y="296" class="ts">elden letar sig nedåt</text>
+  <line x1="400" y1="380" x2="560" y2="400" class="lead"/>
+  <text x="566" y="398" class="tb">förbränningskammare</text><text x="566" y="414" class="ts">ca 1000 °C, ta aldrig ut den</text>
+  <line x1="490" y1="200" x2="560" y2="190" class="lead"/>
+  <text x="566" y="186" class="tb">konvektionsrör</text><text x="566" y="202" class="ts">med turbulatorer,</text><text x="566" y="216" class="ts">sotas 1–2 ggr/månad</text>
+  <text x="566" y="62" class="tb">rökgasfläkt</text><text x="566" y="78" class="ts">suger luften genom pannan</text>
+  <line x1="510" y1="56" x2="560" y2="60" class="lead"/>
+  <text x="612" y="18" class="ts">till skorstenen</text>
+  <line x1="514" y1="440" x2="560" y2="456" class="lead"/>
+  <text x="566" y="460" class="tb">vattenmantel</text><text x="566" y="476" class="ts">vattnet som värms</text>
+</svg></div>
+<figcaption>Så brinner en Bonus Light. Fläkten suger luften genom pannan, så att elden brinner nedåt genom keramiken, och de heta gaserna går upp genom rören bak och avger värme till vattnet. Förenklad principskiss byggd på tillverkarens beskrivning, inte en exakt ritning av er panna.</figcaption></figure>

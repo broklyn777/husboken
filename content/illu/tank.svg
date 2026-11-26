@@ -1,0 +1,61 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Genomskärning av en ackumulatortank. Varmast vatten ligger överst, omkring 85 grader, och svalast längst ner, omkring 40 grader. Varmt vatten från pannan kommer in upptill och svalt går tillbaka till pannan nertill. Till elementen tas vatten upptill och returen kommer in nertill. Elpatronen sitter i övre halvan och varmvattenslingan går genom tanken.">
+  <defs>
+    <linearGradient id="tank-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--hot);stop-opacity:.55"/>
+      <stop offset=".45" style="stop-color:var(--hot);stop-opacity:.28"/>
+      <stop offset=".75" style="stop-color:var(--cold);stop-opacity:.22"/>
+      <stop offset="1" style="stop-color:var(--cold);stop-opacity:.4"/>
+    </linearGradient>
+  </defs>
+  <!-- isolering och tank -->
+  <rect x="270" y="30" width="220" height="400" rx="70" class="g"/>
+  <rect x="290" y="50" width="180" height="360" rx="56" style="fill:url(#tank-grad)" class="s"/>
+  <line x1="470" y1="40" x2="520" y2="30" class="lead"/><text x="524" y="34" class="ts">isolering</text>
+
+  <!-- värmeslinga för varmvatten -->
+  <path d="M318 360 Q440 350 330 330 Q440 320 330 300 Q440 290 330 270 Q440 260 330 240 Q440 230 330 210 Q440 200 330 180 Q440 170 340 150" class="cus" style="stroke-width:3"/>
+  <!-- elpatron -->
+  <rect x="470" y="140" width="34" height="22" class="cr"/>
+  <rect x="380" y="146" width="90" height="10" rx="5" class="cr"/>
+
+  <!-- termometrar -->
+  <g class="ts">
+    <circle cx="282" cy="92" r="9" class="bg" style="stroke:var(--fg)"/><text x="262" y="96" text-anchor="end" class="tb" style="fill:var(--hot)">85 °C</text>
+    <circle cx="282" cy="230" r="9" class="bg" style="stroke:var(--fg)"/><text x="262" y="234" text-anchor="end" class="tb">65 °C</text>
+    <circle cx="282" cy="368" r="9" class="bg" style="stroke:var(--fg)"/><text x="262" y="372" text-anchor="end" class="tb" style="fill:var(--cold)">40 °C</text>
+  </g>
+  <text x="250" y="114" text-anchor="end" class="ts">termometer upptill:</text>
+  <text x="250" y="128" text-anchor="end" class="ts">elda när den visar 40–50 °C</text>
+
+  <!-- vänster: panna -->
+  <path d="M60 80 H290" class="hol"/>
+  <path d="M290 380 H60" class="wal"/>
+  <path d="M140 74 l14 6 l-14 6" class="arr-h"/>
+  <path d="M164 374 l-14 6 l14 6" class="arr-c"/>
+  <text x="60" y="66" class="tb">från vedpannan</text>
+  <text x="60" y="406" class="tb">tillbaka till pannan</text>
+  <text x="60" y="422" class="ts">via laddautomatiken</text>
+
+  <!-- höger: element -->
+  <path d="M470 70 H700" class="hol"/>
+  <path d="M700 390 H470" class="wal"/>
+  <path d="M600 64 l14 6 l-14 6" class="arr-h"/>
+  <path d="M614 384 l-14 6 l14 6" class="arr-c"/>
+  <text x="700" y="56" class="tb" text-anchor="end">till shunten och elementen</text>
+  <text x="700" y="416" class="tb" text-anchor="end">retur från elementen</text>
+
+  <!-- varmvatten -->
+  <path d="M340 150 V20" class="cus" style="stroke-width:3"/>
+  <path d="M318 360 H230 V440" class="cus" style="stroke-width:3"/>
+  <line x1="420" y1="290" x2="560" y2="290" class="lead"/><circle cx="420" cy="290" r="2.5" class="dot"/>
+  <text x="566" y="286" class="tb">varmvattenslinga</text>
+  <text x="566" y="302" class="ts">kallt kranvatten in nertill,</text>
+  <text x="566" y="316" class="ts">varmt kranvatten ut upptill</text>
+  <line x1="504" y1="151" x2="560" y2="180" class="lead"/>
+  <text x="566" y="184" class="tb">elpatron</text>
+  <text x="566" y="200" class="ts">tar över när elden slocknat</text>
+  <text x="334" y="14" class="ts" text-anchor="end">varmvatten till kranarna</text>
+  <text x="236" y="452" class="ts">kallvatten in</text>
+</svg></div>
+<figcaption>Varmt vatten är lättare och lägger sig överst. Därför tas värmen till elementen ut upptill, och det svala vattnet går tillbaka till pannan nertill. Hos er kan anslutningarna sitta annorlunda och varmvattnet kan göras i en separat beredare. Principskiss.</figcaption></figure>

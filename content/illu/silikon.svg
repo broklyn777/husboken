@@ -1,0 +1,49 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Silikonfog mellan kakelvägg och badkarskant i tre steg, i genomskärning. Steg ett: tejp på båda sidor om fogen. Steg två: silikonsträngen sprutas i hörnet. Steg tre: fogen dras slät med spatel så att den blir svagt urgröpt, och tejpen dras bort.">
+  <defs>
+    <pattern id="hatch-si" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" class="bg"/><line x1="0" y1="0" x2="0" y2="7" class="s2"/>
+    </pattern>
+  </defs>
+  <g id="si-base">
+  </g>
+  <!-- tre paneler -->
+  <g transform="translate(30 30)">
+    <text x="100" y="0" class="th" text-anchor="middle">1. Tejpa</text>
+    <rect x="20" y="20" width="40" height="170" style="fill:url(#hatch-si)" class="s2"/>
+    <rect x="60" y="20" width="8" height="170" class="g"/>
+    <rect x="68" y="150" width="140" height="40" style="fill:url(#hatch-si)" class="s2"/>
+    <rect x="68" y="142" width="140" height="8" class="g"/>
+    <rect x="68" y="100" width="4" height="34" style="fill:var(--warn)"/>
+    <rect x="80" y="138" width="34" height="4" style="fill:var(--warn)"/>
+    <text x="100" y="222" text-anchor="middle" class="ts">tejp ett par mm från hörnet,</text>
+    <text x="100" y="236" text-anchor="middle" class="ts">på båda sidor</text>
+  </g>
+  <g transform="translate(270 30)">
+    <text x="100" y="0" class="th" text-anchor="middle">2. Spruta</text>
+    <rect x="20" y="20" width="40" height="170" style="fill:url(#hatch-si)" class="s2"/>
+    <rect x="60" y="20" width="8" height="170" class="g"/>
+    <rect x="68" y="150" width="140" height="40" style="fill:url(#hatch-si)" class="s2"/>
+    <rect x="68" y="142" width="140" height="8" class="g"/>
+    <rect x="68" y="100" width="4" height="34" style="fill:var(--warn)"/>
+    <rect x="80" y="138" width="34" height="4" style="fill:var(--warn)"/>
+    <circle cx="80" cy="130" r="12" style="fill:var(--surface);stroke:var(--fg);stroke-width:1.4"/>
+    <path d="M100 110 L150 60 L160 70 L110 120 Z" class="cr"/>
+    <text x="100" y="222" text-anchor="middle" class="ts">jämn sträng, munstycket</text>
+    <text x="100" y="236" text-anchor="middle" class="ts">snett avskuret</text>
+  </g>
+  <g transform="translate(510 30)">
+    <text x="100" y="0" class="th" text-anchor="middle">3. Dra slätt</text>
+    <rect x="20" y="20" width="40" height="170" style="fill:url(#hatch-si)" class="s2"/>
+    <rect x="60" y="20" width="8" height="170" class="g"/>
+    <rect x="68" y="150" width="140" height="40" style="fill:url(#hatch-si)" class="s2"/>
+    <rect x="68" y="142" width="140" height="8" class="g"/>
+    <path d="M68 118 Q74 136 92 142 H68 Z" style="fill:var(--surface);stroke:var(--fg);stroke-width:1.4"/>
+    <path d="M68 118 Q74 136 92 142" style="fill:none;stroke:var(--copper);stroke-width:2"/>
+    <text x="100" y="222" text-anchor="middle" class="ts">svagt urgröpt, tejpen</text>
+    <text x="100" y="236" text-anchor="middle" class="ts">bort direkt</text>
+  </g>
+  <text x="50" y="292" class="tb">kakelvägg (vänster)</text>
+  <text x="200" y="292" class="tb">badkarskant (nere)</text>
+</svg></div>
+<figcaption>Fogen i genomskärning, där kakelväggen möter badkaret. En urgröpt fog fäster mot båda ytorna och rör sig med när badkaret fylls. Principskiss.</figcaption></figure>

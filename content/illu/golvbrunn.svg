@@ -1,0 +1,41 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Genomskärning av en golvbrunn i betonggolv. Överst ligger gallret. Under sitter silen och vattenlåsinsatsen, där det står vatten som stoppar lukten. Avloppet går ut åt sidan i botten.">
+  <defs>
+    <pattern id="hatch-gb" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" class="bg"/><line x1="0" y1="0" x2="0" y2="8" class="s2"/>
+    </pattern>
+  </defs>
+  <!-- betong -->
+  <rect x="40" y="90" width="680" height="290" style="fill:url(#hatch-gb)" class="s2"/>
+  <!-- brunnens hus -->
+  <path d="M240 90 V330 Q240 350 260 350 H420 Q440 350 440 330 V300 H600 V250 H440 V90" class="g" style="fill:var(--surface)"/>
+  <path d="M240 90 V330 Q240 350 260 350 H420 Q440 350 440 330 V300 H720 M720 250 H440 V90" class="s"/>
+  <!-- vatten i botten och utlopp -->
+  <path d="M244 220 H436 V330 Q436 346 420 346 H260 Q244 346 244 330 Z" class="wa"/>
+  <path d="M440 254 H716 V296 H440 Z" class="wa" style="fill-opacity:.1"/>
+  <!-- galler -->
+  <rect x="226" y="80" width="228" height="10" class="cr"/>
+  <path d="M250 80 V90 M276 80 V90 M302 80 V90 M328 80 V90 M354 80 V90 M380 80 V90 M406 80 V90 M432 80 V90" style="stroke:var(--surface);stroke-width:5"/>
+  <!-- sil -->
+  <path d="M262 104 H418 L410 150 H270 Z" class="bg" style="stroke:var(--fg);stroke-width:1.4;stroke-dasharray:2 3"/>
+  <path d="M290 126 Q310 120 330 128 Q350 134 370 124" class="s2" style="stroke:var(--muted)"/>
+  <!-- vattenlåsinsats: ett rör ner i vattnet -->
+  <path d="M290 156 H390 V170 H372 V260 H308 V170 H290 Z" class="cr"/>
+  <path d="M340 180 V250" class="arr-c"/><path d="M334 242 L340 252 L346 242" class="arr-c"/>
+  <path d="M380 270 Q420 260 420 240" class="arr-c"/>
+  <path d="M600 276 H700" class="arr-c"/><path d="M690 270 L702 276 L690 282" class="arr-c"/>
+  <!-- golvyta -->
+  <path d="M40 90 H226 M454 90 H720" class="s" style="stroke-width:2.5"/>
+  <text x="60" y="80" class="ts">golvet lutar mot brunnen</text>
+
+  <!-- etiketter -->
+  <line x1="454" y1="84" x2="500" y2="50" class="lead"/><text x="504" y="46" class="tb">galler</text><text x="504" y="62" class="ts">lyfts av, ibland en skruv</text>
+  <line x1="262" y1="120" x2="190" y2="60" class="lead"/><text x="186" y="40" text-anchor="end" class="tb">sil</text>
+  <text x="186" y="56" text-anchor="end" class="ts">fångar ludd och hår, töm den</text>
+  <line x1="290" y1="200" x2="190" y2="200" class="lead"/><text x="186" y="196" text-anchor="end" class="tb">vattenlåsinsats</text>
+  <text x="186" y="212" text-anchor="end" class="ts">lyfts upp och skrubbas</text>
+  <line x1="300" y1="300" x2="190" y2="300" class="lead"/><text x="186" y="296" text-anchor="end" class="tb">vattnet som stoppar lukten</text>
+  <text x="186" y="312" text-anchor="end" class="ts">torkar ut om ingen spolar</text>
+  <text x="560" y="240" class="tb">till avloppet</text>
+</svg></div>
+<figcaption>En vanlig golvbrunn i genomskärning. Insatsen hänger ner i vattnet, så att luft från avloppet inte kan komma upp. Äldre brunnar kan se annorlunda ut, men principen är densamma. Principskiss.</figcaption></figure>

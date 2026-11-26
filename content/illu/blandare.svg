@@ -1,0 +1,81 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Genomskärning av ett tvättställ med blandare. Ovanför porslinet sitter blandaren. Under porslinet sitter pinnbulten, hästskobrickan och muttern som håller blandaren. Två flexslangar går från blandaren till avstängningsventilerna på röret från väggen. Under handfatets avlopp sitter vattenlåset.">
+  <defs>
+    <pattern id="hatch-bl" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" class="bg"/><line x1="0" y1="0" x2="0" y2="7" class="s2"/>
+    </pattern>
+  </defs>
+
+  <!-- vägg -->
+  <rect x="640" y="20" width="26" height="440" style="fill:url(#hatch-bl)" class="s2"/>
+  <text x="653" y="476" class="ts" text-anchor="middle">vägg</text>
+
+  <!-- porslin, genomskuret -->
+  <path d="M70 118 H476 V134 H312 Q312 256 214 262 H200 Q72 254 72 134 Z" style="fill:url(#hatch-bl)" class="s"/>
+  <path d="M86 134 Q86 240 200 248 H214 Q298 240 298 134 Z" class="bg"/>
+  <path d="M86 134 Q86 240 200 248 H214 Q298 240 298 134" class="s"/>
+  <text x="190" y="190" class="ts" text-anchor="middle">tvättställ (porslin)</text>
+  <!-- avloppshål / bottenventil -->
+  <rect x="192" y="244" width="30" height="22" class="cr"/>
+  <rect x="198" y="266" width="18" height="40" class="cr"/>
+
+  <!-- blandare ovanpå -->
+  <path d="M362 118 V62 Q362 44 380 44 H392 Q410 44 410 62 V118 Z" class="cr"/>
+  <path d="M364 66 H300 Q280 66 280 82 V92 H292 V80 H364 Z" class="cr"/>
+  <path d="M378 44 L420 26" class="s" style="stroke-width:5"/>
+  <circle cx="386" cy="46" r="4" class="cr"/>
+  <!-- dragstång -->
+  <line x1="418" y1="30" x2="418" y2="118" class="s"/>
+  <line x1="418" y1="134" x2="418" y2="300" class="s"/>
+  <path d="M418 300 H232 V288" class="s"/>
+  <circle cx="418" cy="30" r="4" class="cr"/>
+
+  <!-- under porslinet: pinnbult, bricka, mutter -->
+  <line x1="386" y1="134" x2="386" y2="222" class="s" style="stroke-width:3"/>
+  <path d="M352 134 H420 V142 H352 Z" class="cu"/>
+  <rect x="372" y="142" width="28" height="14" class="cu"/>
+  <!-- monteringsnyckel, streckad -->
+  <path d="M374 156 V330 H398 V156" class="dash"/>
+  <line x1="364" y1="320" x2="408" y2="320" class="dash"/>
+
+  <!-- flexslangar -->
+  <path d="M378 134 C 378 230, 520 210, 560 318" class="s" style="stroke-width:5;stroke:var(--muted)"/>
+  <path d="M394 134 C 400 250, 520 260, 560 378" class="s" style="stroke-width:5;stroke:var(--muted)"/>
+  <path d="M378 134 C 378 230, 520 210, 560 318" class="hol" style="stroke-width:2"/>
+  <path d="M394 134 C 400 250, 520 260, 560 378" class="wal" style="stroke-width:2"/>
+
+  <!-- avstängningsventiler och rör från vägg -->
+  <rect x="552" y="310" width="34" height="18" rx="3" class="cr"/>
+  <rect x="562" y="298" width="14" height="12" class="cr"/>
+  <rect x="586" y="314" width="54" height="10" class="cu"/>
+  <rect x="552" y="370" width="34" height="18" rx="3" class="cr"/>
+  <rect x="562" y="358" width="14" height="12" class="cr"/>
+  <rect x="586" y="374" width="54" height="10" class="cu"/>
+
+  <!-- vattenlås -->
+  <path d="M200 306 V350 Q200 384 234 384 Q268 384 268 350 V334 H640" class="s" style="stroke-width:16;stroke:var(--line)"/>
+  <path d="M200 306 V350 Q200 384 234 384 Q268 384 268 350 V334 H640" class="s"/>
+  <path d="M206 352 Q206 378 234 378 Q262 378 262 352 Z" class="wa"/>
+
+  <!-- etiketter -->
+  <g>
+    <line x1="300" y1="72" x2="250" y2="40" class="lead"/><text x="246" y="36" text-anchor="end" class="tb">Blandare</text>
+    <line x1="420" y1="70" x2="470" y2="58" class="lead"/><text x="474" y="62">dragstång till proppen</text>
+    <line x1="352" y1="138" x2="300" y2="150" class="lead"/><circle cx="352" cy="138" r="2.5" class="dot"/>
+    <text x="296" y="154" text-anchor="end" class="tb">hästskobricka</text>
+    <line x1="372" y1="150" x2="314" y2="182" class="lead"/><circle cx="372" cy="150" r="2.5" class="dot"/>
+    <text x="310" y="196" text-anchor="end" class="tb">mutter</text>
+    <line x1="386" y1="212" x2="330" y2="226" class="lead"/><circle cx="386" cy="212" r="2.5" class="dot"/>
+    <text x="326" y="230" text-anchor="end" class="tb">pinnbult</text>
+    <text x="412" y="348" class="ts">monteringsnyckeln</text>
+    <text x="412" y="362" class="ts">når upp hit</text>
+    <line x1="470" y1="232" x2="500" y2="200" class="lead"/><text x="504" y="196" class="tb">flexslangar</text>
+    <text x="504" y="212" class="ts">varm (röd) till vänster</text>
+    <line x1="560" y1="390" x2="560" y2="412" class="lead"/><text x="620" y="428" text-anchor="end" class="tb">avstängningsventiler</text>
+    <text x="620" y="444" text-anchor="end" class="ts">stäng dessa först</text>
+    <line x1="210" y1="384" x2="170" y2="418" class="lead"/><text x="60" y="432" class="tb">vattenlås</text>
+    <text x="60" y="448" class="ts">vattnet här stoppar avloppslukten</text>
+    <line x1="192" y1="256" x2="120" y2="290" class="lead"/><text x="116" y="294" text-anchor="end" class="tb">bottenventil</text>
+  </g>
+</svg></div>
+<figcaption>Så sitter en blandare. Allt som håller fast den sitter under porslinet, högt upp och långt bak. Därför är monteringsnyckeln (streckad) så användbar. Principskiss, inte skalenlig.</figcaption></figure>

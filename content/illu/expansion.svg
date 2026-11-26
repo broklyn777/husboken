@@ -1,0 +1,40 @@
+<figure class="illu"><div class="ill-scroll">
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Genomskärning av ett slutet expansionskärl i två lägen. Kallt system: membranet ligger lågt och mycket luft finns ovanför. Varmt system: vattnet har utvidgat sig, pressat upp membranet och tryckt ihop luften.">
+  <g transform="translate(70 0)">
+    <text x="110" y="28" class="th" text-anchor="middle">Kallt system</text>
+    <rect x="40" y="50" width="140" height="250" rx="60" class="g"/>
+    <path d="M46 230 Q110 250 174 230 L174 250 Q174 296 110 296 Q46 296 46 250 Z" class="wa"/>
+    <path d="M46 230 Q110 250 174 230" class="s" style="stroke-width:3;stroke:var(--copper)"/>
+    <text x="110" y="150" text-anchor="middle" class="tb">luft</text>
+    <text x="110" y="166" text-anchor="middle" class="ts">förtryck ca 0,5–1 bar</text>
+    <text x="110" y="276" text-anchor="middle" class="ts">vatten</text>
+    <rect x="100" y="34" width="20" height="16" class="cr"/>
+    <rect x="100" y="300" width="20" height="40" class="cu"/>
+    <path d="M110 340 V356" class="wal"/>
+  </g>
+  <g transform="translate(330 0)">
+    <text x="110" y="28" class="th" text-anchor="middle">Varmt system</text>
+    <rect x="40" y="50" width="140" height="250" rx="60" class="g"/>
+    <path d="M46 130 Q110 112 174 130 L174 250 Q174 296 110 296 Q46 296 46 250 Z" class="wa"/>
+    <path d="M46 130 Q110 112 174 130" class="s" style="stroke-width:3;stroke:var(--copper)"/>
+    <text x="110" y="96" text-anchor="middle" class="tb">luften trycks ihop</text>
+    <text x="110" y="210" text-anchor="middle" class="ts">vattnet har utvidgat sig</text>
+    <rect x="100" y="34" width="20" height="16" class="cr"/>
+    <rect x="100" y="300" width="20" height="40" class="cu"/>
+    <path d="M110 356 V340" class="hol"/>
+    <path d="M110 330 V268 M102 278 L110 266 L118 278" class="arr-h"/>
+  </g>
+  <g>
+    <line x1="190" y1="42" x2="250" y2="42" class="lead"/><text x="254" y="46" class="tb">ventil för förtryck</text>
+    <text x="254" y="62" class="ts">som på ett cykeldäck</text>
+    <text x="580" y="150" class="tb">membran</text>
+    <line x1="576" y1="146" x2="510" y2="124" class="lead"/>
+    <text x="580" y="250" class="tb">Om membranet går sönder</text>
+    <text x="580" y="266" class="ts">fylls hela kärlet med vatten,</text>
+    <text x="580" y="282" class="ts">trycket rusar när pannan blir</text>
+    <text x="580" y="298" class="ts">varm och säkerhetsventilen</text>
+    <text x="580" y="314" class="ts">droppar. Då ska kärlet bytas.</text>
+    <text x="200" y="372" class="ts" text-anchor="middle">till värmesystemet</text>
+  </g>
+</svg></div>
+<figcaption>Inuti ett slutet expansionskärl skiljer ett gummimembran luften från vattnet. När vattnet blir varmt tar det mer plats och trycker ihop luften i stället för att höja trycket i rören. Förtrycket kontrolleras med en däcktrycksmätare när systemet är trycklöst. Principskiss.</figcaption></figure>

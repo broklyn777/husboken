@@ -1,0 +1,99 @@
+<div class="stack">
+    <h2>Värmesystemet förklarat</h2>
+    <p class="lede">Det ser ut som massor av rör, men nästan alla vattenburna värmesystem bygger på samma idé: vatten värms upp, pumpas ut till elementen, lämnar av värmen och kommer tillbaka svalare för att värmas igen.</p>
+  </div>
+
+  <div class="prose">
+    <h3>Den enkla bilden</h3>
+    <p>Tänk på systemet som ett slutet kretslopp av vatten, ungefär som blodomloppet. Pannan är hjärtat som värmer, pumpen ser till att vattnet rör sig, och elementen är där värmen lämnas av i rummen.</p>
+    <ul>
+      <li><b>Framledning</b> är röret som går <em>ut</em> med varmt vatten.</li>
+      <li><b>Retur</b> är röret som kommer <em>tillbaka</em> med svalare vatten.</li>
+      <li>Vattnet i elementen är samma vatten år efter år. Det är inte samma vatten som i kranarna.</li>
+      <li>Vatten utvidgar sig när det blir varmt. Därför finns ett <b>expansionskärl</b> som tar upp det, och en <b>säkerhetsventil</b> som släpper ut vatten om trycket blir för högt.</li>
+    </ul>
+  </div>
+
+  <div class="stack">
+    <h3>Så hänger det typiskt ihop</h3>
+    <div class="diagram" role="img" aria-label="Principskiss: vedpanna värmer vatten som går till en ackumulatortank. Från tanken blandar shuntventilen till rätt temperatur och cirkulationspumpen skickar vattnet ut till elementen. Svalt vatten går tillbaka. Expansionskärl och säkerhetsventil sitter på pannkretsen.">
+      <svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="Source Sans 3, system-ui, sans-serif" font-size="13">
+        <style>
+          .bx{fill:var(--sunk);stroke:var(--muted);stroke-width:1.5}
+          .tx{fill:var(--fg)} .sm{fill:var(--muted);font-size:11.5px}
+          .hot{stroke:var(--hot);stroke-width:4;fill:none} .cold{stroke:var(--cold);stroke-width:4;fill:none}
+          .opt{fill:none;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:5 4}
+          .dot{fill:var(--copper)}
+        </style>
+        <!-- panna -->
+        <rect class="bx" x="30" y="140" width="130" height="170" rx="6"/>
+        <text class="tx" x="95" y="230" text-anchor="middle" font-weight="700">Vedpanna</text>
+        <text class="sm" x="95" y="248" text-anchor="middle">Baxi Bonus Light</text>
+        <rect x="55" y="270" width="80" height="26" rx="3" fill="var(--copper-soft)" stroke="var(--copper)"/>
+        <text x="95" y="288" text-anchor="middle" font-size="11.5" fill="var(--copper)">eldstad</text>
+        <!-- tank -->
+        <rect class="bx" x="270" y="70" width="110" height="250" rx="40"/>
+        <text class="tx" x="325" y="190" text-anchor="middle" font-weight="700">Ackumulator-</text>
+        <text class="tx" x="325" y="207" text-anchor="middle" font-weight="700">tank</text>
+        <text class="sm" x="325" y="226" text-anchor="middle">+ elpatron, varmvatten</text>
+        <text class="sm" x="325" y="95" text-anchor="middle">varmast upptill</text>
+        <text class="sm" x="325" y="305" text-anchor="middle">svalast nertill</text>
+        <!-- panna -> tank (fram) -->
+        <path class="hot" d="M160 165 H215 V110 H270"/>
+        <!-- tank -> panna (retur) via laddpump -->
+        <path class="cold" d="M270 290 H215 V295 H160"/>
+        <circle cx="215" cy="295" r="11" fill="var(--surface)" stroke="var(--cold)" stroke-width="2.5"/>
+        <text class="sm" x="215" y="330" text-anchor="middle">laddpump /</text>
+        <text class="sm" x="215" y="344" text-anchor="middle">laddautomatik</text>
+        <!-- tank -> shunt -->
+        <path class="hot" d="M380 110 H470 V180"/>
+        <!-- shunt -->
+        <polygon points="458,180 482,180 470,202" fill="var(--surface)" stroke="var(--copper)" stroke-width="2.5"/>
+        <polygon points="458,224 482,224 470,202" fill="var(--surface)" stroke="var(--copper)" stroke-width="2.5"/>
+        <text class="tx" x="492" y="206" font-weight="700">Shuntventil</text>
+        <text class="sm" x="492" y="221">blandar till rätt temp</text>
+        <!-- shunt -> pump -> radiators -->
+        <path class="hot" d="M470 224 V255 H560"/>
+        <circle cx="560" cy="255" r="13" fill="var(--surface)" stroke="var(--hot)" stroke-width="2.5"/>
+        <path d="M554 249 L568 255 L554 261 Z" fill="var(--hot)"/>
+        <text class="sm" x="560" y="285" text-anchor="middle">cirkulationspump</text>
+        <path class="hot" d="M573 255 H640 V80"/>
+        <!-- radiators -->
+        <g>
+          <rect class="bx" x="660" y="60" width="70" height="40" rx="4"/>
+          <rect class="bx" x="660" y="130" width="70" height="40" rx="4"/>
+          <text class="tx" x="695" y="198" text-anchor="middle" font-weight="700">Element</text>
+          <text class="sm" x="695" y="214" text-anchor="middle">i rummen</text>
+          <path class="hot" d="M640 80 H660 M640 150 H660"/>
+          <path class="cold" d="M730 80 H748 V235 H490 M730 150 H748"/>
+          <!-- return mixing back into shunt and tank bottom -->
+          <path class="cold" d="M490 235 V213 H482"/>
+          <path class="cold" d="M490 235 V300 H380"/>
+        </g>
+        <!-- expansion + safety -->
+        <path class="opt" d="M95 140 V80"/>
+        <rect class="bx" x="55" y="28" width="80" height="52" rx="26"/>
+        <text class="tx" x="95" y="52" text-anchor="middle" font-size="11.5" font-weight="700">Expansions-</text>
+        <text class="tx" x="95" y="66" text-anchor="middle" font-size="11.5" font-weight="700">kärl</text>
+        <circle class="dot" cx="160" cy="140" r="5"/>
+        <text class="sm" x="170" y="136">säkerhetsventil</text>
+        <circle class="dot" cx="160" cy="185" r="5"/>
+        <text class="sm" x="170" y="200">manometer + termometer</text>
+      </svg>
+    </div>
+    <div class="legend"><span><i style="background:var(--hot)"></i>varmt (<a class="term" href="/ordlista#framledning">framledning</a>)</span><span><i style="background:var(--cold)"></i>svalare (retur)</span><span><i style="border-top:2px dashed var(--muted);height:0"></i>anslutning</span></div>
+    <p class="status">Det här är en förenklad principskiss, inte en karta över just ert hus. Hos er kan tanken saknas, pumparna sitta på andra ställen eller varmvattnet göras i pannan. Använd listan nedan och fota hur det faktiskt ser ut.</p>
+  </div>
+
+  <div class="stack">
+    <h3>Så kan delarna se ut</h3>
+    <p class="status">Riktiga foton från Wikimedia Commons, tagna i andra hus. Märken och färger skiljer sig, men formen känns igen.</p>
+    <div class="figrow">
+      <figure><img src="/img/manometer.jpg" alt="Rund tryckmätare monterad på ett värmerör" loading="lazy"><figcaption><b>Manometer.</b> Visar trycket i bar. Läs av när systemet är kallt.<span class="src">Foto: Shixart1985, CC BY 2.0</span></figcaption></figure>
+      <figure><img src="/img/expansion.jpg" alt="Rött slutet expansionskärl på väggen med avstängningskran och tömningskran" loading="lazy"><figcaption><b>Expansionskärl</b> (slutet). Ser ut som en gasolflaska, oftast röd eller vit.<span class="src">Foto: The RedBurn, CC BY-SA 4.0</span></figcaption></figure>
+      <figure><img src="/img/sakerhetsventil.jpg" alt="Säkerhetsventil för värmesystem i mässing, märkt 2,5 bar, isärtagen" loading="lazy"><figcaption><b>Säkerhetsventil</b>, här märkt 2,5 bar och isärtagen så man ser fjädern.<span class="src">Foto: StromBer, CC BY-SA 3.0</span></figcaption></figure>
+      <figure><img src="/img/tank.jpg" alt="Stor isolerad buffertank i ett pannrum med många rör anslutna" loading="lazy"><figcaption><b>Ackumulatortank</b> (buffertank). Stor isolerad cylinder med rör på flera höjder.<span class="src">Foto: BHKW-Info, CC BY-SA 4.0</span></figcaption></figure>
+      <figure><img src="/img/vedpanna.jpg" alt="Vedförgasningspanna med luckor fram och fläkt" loading="lazy"><figcaption><b>Vedförgasningspanna</b> av annat märke men samma princip som er Bonus Light.<span class="src">Foto: IBC Heiztechnik, CC BY-SA 4.0</span></figcaption></figure>
+      <figure><img src="/img/termostat.jpg" alt="Termostatventil med siffror på ett element" loading="lazy"><figcaption><b>Termostatventil</b> på elementet. Siffrorna styr rummets temperatur, 3 är ca 20 °C.<span class="src">Foto: Santeri Viinamäki, CC BY-SA 4.0</span></figcaption></figure>
+    </div>
+  </div>

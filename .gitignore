@@ -1,0 +1,7 @@
+node_modules
+.next
+next-env.d.ts
+# Loggen och era foton. Ta bort raden om ni vill spara dem i git.
+data
+.DS_Store
+*.tsbuildinfo
